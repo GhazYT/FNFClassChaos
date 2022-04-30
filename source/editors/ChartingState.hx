@@ -110,6 +110,7 @@ class ChartingState extends MusicBeatState
 	var curSong:String = 'Dadbattle';
 	var amountSteps:Int = 0;
 	var bullshitUI:FlxGroup;
+	var Boyfriend:Boyfriend;
 
 	var highlight:FlxSprite;
 
@@ -353,6 +354,9 @@ class ChartingState extends MusicBeatState
 			add(tipText);
 		}
 		add(UI_box);
+		Boyfriend = new Boyfriend(FlxG.width + 100, FlxG.height - 50, _song.player1);
+		Boyfriend.scrollFactor.set(0,0);
+		add(Boyfriend);
 
 		addSongUI();
 		addSectionUI();

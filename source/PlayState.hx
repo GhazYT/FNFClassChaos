@@ -913,6 +913,10 @@ Cutie Rapper
 			case 'schoolEvil':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
+				var vcr:GlitchShader;
+				vcr = new GlitchShader();
+				camGame.setFilters([new ShaderFilter(vcr)]);
+				camHUD.setFilters([new ShaderFilter(vcr)]);
 		}
 
 		var file:String = Paths.json(ClientPrefs.addon + songName + '/dialogue'); //Checks for json/Psych Engine dialogue

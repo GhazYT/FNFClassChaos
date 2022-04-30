@@ -75,7 +75,8 @@ class CharacterData
 
 class Characterselect extends MusicBeatState
 {
-    public var CharactersData:Array<CharacterData> = [new CharacterData(['bf', 'zero'], ['Boyfriend', 'Boyfriend ZERO'])];
+	public var CharactersData:Array<CharacterData> = [
+		new CharacterData(['bf', 'zero', 'zero-mic'], ['Boyfriend', 'Boyfriend ZERO', 'Boyfriend ZERO MIC'])];
     public var select:Int = 0; 
     public var characterselected:CharacterData;
 	public var characterdisplay:Boyfriend;
